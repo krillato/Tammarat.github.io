@@ -1,0 +1,20 @@
+# input และเรียงลำดับข้อมูลตัวเลข หา Max min
+
+num=[]
+while True :
+    x=int(input("รับตัวเลข :"))
+    if x < 0 :
+        print("จบโปรแกรม")
+        break
+    num.append(x)
+
+print ("ก่อนเรียง :",num)
+num.sort()
+print ("หลังเรียง น้อย ==> มาก :",num)
+num.reverse()
+print ("หลังเรียง มาก ==> น้อย :",num)
+
+print ("ค่าที่น้อยที่สุด :",min(num))
+print ("ค่าที่มากที่สุด :",max(num))
+
+print("จบโปรแกรม")
